@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Kicktemp GmbH</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/kicktemp.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Titel -->
+				<section>
+					<h1>Beyond Child Themes</h1>
+					<h3>Extending YOOtheme Pro the Smart & Scalable Way</h3>
+					<p>Niels Nübel · Kicktemp GmbH · YOOtheme Community Day 2025</p>
+
+					<aside class="notes">
+						Begrüßung, Kino-Setting, Popcorn.
+						Hinweis: Vortrag direkt nach Mittagessen → Joke.
+						Warm einsteigen.
+					</aside>
+				</section>
+
+				<!-- Sascha Dube -->
+				<section>
+					<h2>Wie ich hier gelandet bin …</h2>
+					<blockquote>
+						„Kannst du mal zeigen, was man alles mit YOOtheme machen kann?“
+					</blockquote>
+					<p>– Sascha Dube, YOOtheme</p>
+
+					<aside class="notes">
+						Sascha hat mich gefragt, das mal zu zeigen.
+						YOOtheme selbst war neugierig, was möglich ist.
+						Heute also: Praxis statt Theorie.
+					</aside>
+				</section>
+
+				<!-- Wer bin ich -->
+				<section>
+					<section>
+						<h2>Wer bin ich?</h2>
+						<ul>
+							<li>Kicktemp GmbH</li>
+							<li>Seit 2009 selbstständig</li>
+							<li>Joomla + YOOtheme Pro</li>
+							<li>Web · Ads · Hosting</li>
+						</ul>
+
+						<aside class="notes">
+							Kurz über mich.
+							Warum YOOtheme: schöne Designs + flexible Inhalte.
+							Unsere Mission: modular, update-sicher, skalierbar.
+						</aside>
+					</section>
+
+					<!-- Haupt-Slide -->
+					<section>
+						<h2>Meine Joomla Story</h2>
+						<p>Optional: Ein Blick zurück …</p>
+
+						<aside class="notes">
+							Hier könnte ich, wenn Zeit und Stimmung passt, meine persönliche Story zeigen.
+							Wenn nicht: einfach weiter zur nächsten Hauptfolie.
+						</aside>
+					</section>
+
+						<!-- Vertical Slide 1 -->
+						<section>
+							<h2>Wie alles begann</h2>
+							<p>2005 Marine – Ausbildung Informatikkaufmann</p>
+							<img data-src="dist/assets/marine.jpg" style="max-height: 40vh;"/>
+
+						</section>
+						<section>
+							<p>2007 Praktikum LogoPak – Zeiterfassungssoftware</p>
+							<img data-src="dist/assets/Stempeluhr.jpg" style="max-height: 40vh;"/>
+						</section>
+
+						<!-- Vertical Slide 2 -->
+						<section>
+							<h2>Funfact</h2>
+							<p>Die Zeiterfassung war über 11 Jahre im Einsatz</p>
+							<img data-src="dist/assets/zeiterfassung.png" style="max-height: 40vh;"/>
+						</section>
+
+						<!-- Vertical Slide 3 -->
+						<section>
+							<h2>2009–2018</h2>
+							<img data-src="dist/assets/nn-medienagentur.svg" style="max-height: 40vh; background: white; padding: 10px"/>
+							<p>Gründung der NN-Medienagentur</p>
+							<p>2009 erste Joomla-Website: Bäcker Weiss</p>
+							<img data-src="dist/assets/baeckerweiss.png" style="max-height: 30vh;"/>
+						</section>
+
+						<!-- Vertical Slide 4 -->
+						<section>
+							<h2>2011 JoomlaDay Hamburg</h2>
+							<p>Treffen mit Sascha Dube & Steffan Schiewe (YOOtheme)</p>
+							<p>Kennenlernen von Stefan Wendhausen</p>
+							<img data-src="dist/assets/joomladayhh.jpg" style="max-height: 50vh;"/>
+						</section>
+
+						<!-- Vertical Slide 5 -->
+						<section>
+							<h2>Der Weg zur Kicktemp GmbH</h2>
+							<p>7 Jahre gemeinsame Projekte mit Tec-Promotion</p>
+							<img data-src="dist/assets/cebit.jpg" style="max-height: 40vh;"/>
+						</section>
+
+						<!-- Vertical Slide 6 -->
+						<section>
+							<h3>2018 Gründung der Kicktemp GmbH</h3>
+							<img data-src="dist/assets/kicktemp-team.jpg" style="max-height: 30vh;"/>
+							<p>Mit Stefan Wendhausen & Jenny Nübel</p>
+						</section>
+
+						<!-- Vertical Slide 7 -->
+						<section>
+							<h2>YOOmasterclass 2024</h2>
+							<p>Unsere Schulungsreihe für YOOtheme Pro</p>
+							<img data-src="dist/assets/yoomasterclass.jpg" style="max-height: 40vh;"/>
+							<p>→ Wissen teilen · Community stärken</p>
+						</section>
+
+						<!-- Vertical Slide 8 -->
+						<section>
+							<h2>Kicktemp Shop</h2>
+							<p><a href="https://kicktemp.shop" target="_blank">kicktemp.shop</a></p>
+							<img data-src="dist/assets/kicktemp-shop.jpg" style="max-height: 40vh;"/>
+							<p>Kernprodukt: <strong>KickYooAddons</strong></p>
+						</section>
+
+						<!-- Vertical Slide 9 -->
+						<section>
+							<h2>Warum Kicktemp?</h2>
+							<p>Name kommt vom „Kicktemp“-Template: <br> Kick = schnell · temp = Template</p>
+							<img data-src="dist/assets/kicktemplate.jpg" style="max-height: 30vh;"/>
+						</section>
+
+						<!-- Vertical Slide 10 -->
+						<section>
+							<h2>Warum Joomla?</h2>
+							<ul>
+								<li>Flexibles Open-Source CMS</li>
+								<li>Seit 2009 aktiv in der Entwicklung</li>
+								<li>Community-Engagement & Events</li>
+							</ul>
+							<img data-src="dist/assets/1und1.jpg" style="max-height: 40vh;"/>
+						</section>
+
+						<!-- Vertical Slide 11 -->
+						<section>
+							<h2>Warum YOOtheme Pro?</h2>
+							<p>Früher: eigene Templates</p>
+							<p>Heute: YOOtheme Pro → mehr Flexibilität & Effizienz</p>
+						</section>
+					</section>
+
+				<!-- Umfrage: Publikum -->
+				<section>
+					<h2>Bevor wir starten 👀</h2>
+					<ul>
+						<li>Anwender?</li>
+						<li class="fragment">Entwickler?</li>
+					</ul>
+
+					<aside class="notes">
+						Erst Anwender abfragen, dann Entwickler.
+						Hände hoch → ich sehe die Mischung im Raum.
+						Kommentar: „Perfekt, dann hab ich was für beide Seiten.“
+					</aside>
+				</section>
+
+				<!-- Umfrage: Child Themes -->
+				<section>
+					<h2>Child Themes 🙋‍♂️🙋‍♀️</h2>
+					<ul>
+						<li>Schon mal gebaut?</li>
+						<li class="fragment">Schon mal geflucht?</li>
+					</ul>
+
+					<aside class="notes">
+						- Zuerst neutral: Wer hat schon mal eins gebaut?
+						- Danach: Wer hat geflucht? → Lacher abholen.
+						- Übergang: Genau darum geht’s heute.
+					</aside>
+				</section>
+
+				<!-- Child Themes – Fluch & Segen -->
+				<section>
+					<h2>Child Themes – Fluch & Segen</h2>
+					<ul>
+						<li>✅ Update-sicher</li>
+						<li>✅ Schnell für Tweaks</li>
+						<li>❌ Projektgebunden</li>
+						<li>❌ Nicht wiederverwendbar</li>
+						<li>❌ Wartungsmonster</li>
+					</ul>
+
+					<aside class="notes">
+						Vorteile: Update-sicher, gut für kleine Anpassungen.
+						Aber: Projektgebunden, schwer wiederverwendbar.
+						Bei vielen Projekten → Chaos.
+						Und genau deswegen suchen wir eine bessere Lösung.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Die Alternative: Plugins</h2>
+					<ul>
+						<li>🔌 Modular & wiederverwendbar</li>
+						<li>⚡ Saubere Trennung von Code & Layout</li>
+						<li>📦 Zentral gepflegt, einfach zu updaten</li>
+						<li>🤝 Ideal für Teams & Agenturen</li>
+					</ul>
+
+					<aside class="notes">
+						- Plugins lösen viele Probleme von Child Themes.
+						- Modular & wiederverwendbar → funktioniert in jedem Projekt.
+						- Saubere Trennung → Code bleibt übersichtlich.
+						- Zentral gepflegt → Updates viel einfacher.
+						- Für Agenturen & Teams die einzige nachhaltige Lösung.
+						- Überleitung: Und dafür gibt’s sogar ein offizielles Starter Kit von YOOtheme.
+					</aside>
+				</section>
+
+				<!-- Umfrage: Plugins -->
+				<section>
+					<h2>Plugins 🔌</h2>
+					<ul>
+						<li class="fragment">Joomla Plugin?</li>
+						<li class="fragment">YOOtheme Plugin?</li>
+						<li class="fragment">Regelmäßig?</li>
+					</ul>
+
+					<aside class="notes">
+						- Erst allgemein: Joomla Plugin gebaut?
+						- Dann spezieller: YOOtheme Plugin?
+						- Zum Schluss: Wer macht das regelmäßig?
+						- Überleitung: Genau da setzen wir heute an.
+					</aside>
+				</section>
+
+
+				<section>
+					<h2>YOOtheme Starter Plugin 🚀</h2>
+					<p>Offizieller Boilerplate für Entwickler</p>
+					<ul>
+						<li>Schneller Einstieg</li>
+						<li>Update-Server inklusive</li>
+						<li>Saubere Basis für eigene Ideen</li>
+					</ul>
+
+					<p>
+						<a href="https://yootheme.com/blog/2024/09/30/yootheme-starter-plugin-the-easiest-way-to-extend-yootheme-pro" target="_blank">
+							👉 YOOtheme Starter Plugin
+						</a>
+					</p>
+
+					<p>
+						<a href="https://coolcat-creations.com/images/download/Unlock-your-Creativity.pdf" target="_blank">
+							📄 PDF „Unlock your Creativity“ – Elisa Foltyn, YTC24
+						</a>
+					</p>
+
+					<aside class="notes">
+						- YOOtheme selbst gibt mit dem Starter Plugin einen Boilerplate.
+						- Damit kommt man schnell rein, sogar mit Update-Server.
+						- Schon 2024 war das Thema wichtig → Elisa hat damals diesen Vortrag dazu gehalten.
+						- Heute gehen wir weiter und schauen uns an, wie wir das im Alltag einsetzen.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Webseiten</h2>
+					<ul>
+						<li><a href="https://kicktemp.com" target="_blank">kicktemp.com</a></li>
+						<li><a href="https://kicktemp.shop" target="_blank">kicktemp.shop</a></li>
+						<li><a href="https://yoomasterclass.com" target="_blank">yoomasterclass.com</a></li>
+						<li><a href="https://kickyoocasts.com" target="_blank">kickyoocasts.com</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Vielen Dank!</h2>
+					<p>Fragen? Lasst uns ins Gespräch kommen!</p>
+					<p>Website: <a href="https://kicktemp.com">kicktemp.com</a></p>
+				</section>
+			</div>
+		</div>
+
+		<svg class="kicktemp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1242.1 239"><g id="kicktemp"><path id="name" d="M290.76 113.08V75.71H274.1v88.35h16.66V120l39.7 44h21.38v-.52l-40.54-43.59 40.54-43.66v-.52h-21.38l-39.7 44v-6.67zm131.71 51V75.71h-16.54v88.35zm355.6 0h16.66V90.84h28V75.71H750v15.13h28v73.22zm169.71-16.39h-49.62v-19.93H946v-15.5h-64.38v51.8h66.16v-16.39zm138.9 16.39h16.66V76h-19.06l-27.66 37.88L1029 76h-19.18v88.1h16.66V100l28.16 38.37 1.68 2.09 1.6-2.09 28.79-38.25v63.92zm123-88.35c-13.89-.13-27.78 0-41.66 0v88.35h16.66v-26h25c43.32.01 43.17-62.37-.01-62.37zm0 47.14h-25V91.59h25c21.2 0 21.32 31.26-.01 31.26zM701.25 75.71h-21.38l-39.69 44v-44h-16.67v88.35h16.67V120l39.69 44h21.38v-.52l-40.53-43.65 40.53-43.66zm196.91 16.13h-16.54V75.71h66.16v16.13h-49.62zM554 141.5l10.75 12.05c-9.09 8.95-20.22 12.52-33 12.52-32.82 0-46.71-22.56-46.84-45.49s14.9-46.51 46.84-46.51a44.42 44.42 0 0 1 32.09 13.14l-10.31 11.44A31.85 31.85 0 0 0 531.75 90c-21.33 0-30.55 15.88-30.42 30.63s8.58 29.87 30.42 29.87a32.64 32.64 0 0 0 22.25-9z" fill="#fff" fill-rule="evenodd"></path><path id="signet" d="M204.88 185.37l-18.32-19.85V73.21L106.5 26.92l-14.75 8.53-2.38 1.43V187.4L59.16 170V23.71l19.37-11.2 17.19-9.94a23.89 23.89 0 0 1 21.56 0l84.94 49.12C208.15 55.12 213 63.53 213 70.38v98.24c0 5.79-3.47 12.69-8.12 16.75zm-78.42-65.87l39.94-43.15L141 61.73 89.37 119.5l60.41 67.56-43.28 25-80.06-46.27V73.21L45.82 62V31.43l-7.11 4.11-27.93 16.15C4.85 55.12 0 63.53 0 70.38v98.24c0 6.85 4.85 15.26 10.78 18.69l84.94 49.12a23.89 23.89 0 0 0 21.56 0l76.5-44.24z" fill="#fff"></path></g></svg>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				viewDistance: 2,
+				hash: false,
+				transition: 'fade',
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealHighlight, RevealNotes ]
+			});
+
+			/* Click-to-Play Videos for each slide
+			 * Usage (HTML or Markdown HTML block):
+			 * <video data-clickplay data-src="dist/assets/example.mp4" poster="dist/assets/poster.jpg" playsinline></video>
+			 * - Click toggles play/pause.
+			 * - Video is lazily loaded from data-src on first activation.
+			 * - Video pauses and resets when leaving the slide.
+			 */
+			(function setupClickPlayVideos(){
+				function enhanceVideo(vid){
+					if (!vid || vid.__enhanced) return;
+					vid.__enhanced = true;
+					vid.controls = false; // show controls only when playing
+					vid.preload = 'none';
+					vid.setAttribute('playsinline','');
+					if (vid.hasAttribute('data-clickplay')) vid.style.cursor = 'pointer';
+
+					// overlay play icon only for click-to-play
+					let overlay = null;
+					if (vid.hasAttribute('data-clickplay')){
+						overlay = document.createElement('div');
+						overlay.className = 'kt-video-overlay';
+						overlay.innerHTML = '<svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="rgba(0,0,0,0.35)"/><polygon points="40,30 75,50 40,70" fill="#fff"/></svg>';
+						vid.parentElement.style.position = vid.parentElement.style.position || 'relative';
+						vid.parentElement.appendChild(overlay);
+					}
+
+					function loadSrcIfNeeded(){
+						if (!vid.src && vid.dataset.src) {
+							vid.src = vid.dataset.src;
+						}
+					}
+
+					function play(){
+						loadSrcIfNeeded();
+						vid.play().catch(()=>{});
+						// Show controls only for click-to-play videos
+						vid.controls = vid.hasAttribute('data-clickplay');
+						if (overlay) overlay.style.opacity = '0';
+					}
+					function pause(){
+						vid.pause();
+						vid.controls = false;
+						if (overlay) overlay.style.opacity = '1';
+					}
+
+					if (vid.hasAttribute('data-clickplay')){
+						vid.addEventListener('click', () => {
+							if (vid.paused) play(); else pause();
+						});
+						overlay.addEventListener('click', (e)=>{ e.stopPropagation(); play(); });
+					}
+
+					// pause/reset when leaving slide
+					function reset(){ try { vid.pause(); vid.currentTime = 0; } catch(e){} vid.controls = false; if (overlay) overlay.style.opacity = '1'; }
+					vid.__resetVideo = reset;
+					vid.__playVideo = play;
+				}
+
+				function enhanceAllInSlide(slide){
+					if (!slide) return;
+					slide.querySelectorAll('video[data-clickplay], video[data-autoplay]').forEach(enhanceVideo);
+					// auto-play any video with data-autoplay when slide becomes current
+					slide.querySelectorAll('video[data-autoplay]').forEach(v => { if (v.__playVideo) v.__playVideo(); });
+				}
+
+				Reveal.on('ready', evt => { enhanceAllInSlide(evt.currentSlide); });
+				Reveal.on('slidechanged', evt => {
+					// reset videos in previous slide
+					evt.previousSlide && evt.previousSlide.querySelectorAll('video[data-clickplay], video[data-autoplay]').forEach(v => v.__resetVideo && v.__resetVideo());
+					// enhance current slide
+					enhanceAllInSlide(evt.currentSlide);
+				});
+
+				// Also handle fragment hide to pause if video is in hidden fragment
+				Reveal.on('fragmenthidden', evt => {
+					const v = evt.fragment.querySelector && evt.fragment.querySelector('video[data-clickplay], video[data-autoplay]');
+					if (v && v.__resetVideo) v.__resetVideo();
+				});
+			})();
+		</script>
+	</body>
+</html>

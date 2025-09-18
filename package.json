@@ -1,0 +1,78 @@
+{
+  "name": "reveal.js",
+  "version": "5.1.0",
+  "description": "The HTML Presentation Framework",
+  "homepage": "https://revealjs.com",
+  "subdomain": "revealjs",
+  "main": "dist/reveal.js",
+  "module": "dist/reveal.esm.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "sass --no-source-map css/reveal.scss dist/reveal.css && sass --no-source-map css/theme/source/kicktemp.scss dist/theme/kicktemp.css && npx http-server -p 8000 -c-1 .",
+    "build": "sass --no-source-map css/reveal.scss dist/reveal.css && sass --no-source-map css/theme/source/kicktemp.scss dist/theme/kicktemp.css",
+    "watch": "sass --no-source-map --watch css/reveal.scss:dist/reveal.css css/theme/source/kicktemp.scss:dist/theme/kicktemp.css",
+    "dev": "concurrently \"sass --no-source-map --watch css/reveal.scss:dist/reveal.css css/theme/source/kicktemp.scss:dist/theme/kicktemp.css\" \"browser-sync start --server . --port 3000 --no-ui --no-notify --files index.html,dist/**/*.css,js/**/*.js,plugin/**/*.js,dist/assets/**/*,css/**/*,*.html\""
+  },
+  "author": {
+    "name": "Hakim El Hattab",
+    "email": "hakim.elhattab@gmail.com",
+    "web": "https://hakim.se"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hakimel/reveal.js.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "reveal",
+    "slides",
+    "presentation"
+  ],
+  "devDependencies": {
+    "sass": "^1.79.4",
+    "http-server": "^14.1.1",
+    "browser-sync": "^2.29.3",
+    "concurrently": "^9.0.1"
+  },
+  "browserslist": "> 2%, not dead",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+      "sourceType": "module",
+      "allowImportExportEverywhere": true,
+      "requireConfigFile": false
+    },
+    "globals": {
+      "module": false,
+      "console": false,
+      "unescape": false,
+      "define": false,
+      "exports": false
+    },
+    "rules": {
+      "curly": 0,
+      "eqeqeq": 2,
+      "wrap-iife": [
+        2,
+        "any"
+      ],
+      "no-use-before-define": [
+        2,
+        {
+          "functions": false
+        }
+      ],
+      "new-cap": 2,
+      "no-caller": 2,
+      "dot-notation": 0,
+      "no-eq-null": 2,
+      "no-unused-expressions": 0
+    }
+  }
+}
