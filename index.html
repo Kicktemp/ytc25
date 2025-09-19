@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="de">
 	<head>
+		<link rel="icon" href="dist/assets/signet.png" sizes="any">
+		<link rel="icon" href="dist/assets/signet.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="dist/assets/signet_180.png">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -17,7 +20,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<!-- Titel -->
-				<section>
+				<section data-state="hidekick">
 					<h1>Beyond Child Themes</h1>
 					<h3>Extending YOOtheme Pro the Smart & Scalable Way</h3>
 					<p>Niels Nübel · Kicktemp GmbH · YOOtheme Community Day 2025</p>
@@ -30,10 +33,10 @@
 				</section>
 
 				<!-- Sascha Dube -->
-				<section>
+				<section data-state="hidekick">
 					<h2>Wie ich hier gelandet bin …</h2>
 					<blockquote>
-						„Kannst du mal zeigen, was man alles mit YOOtheme machen kann?“
+						„Zeigt doch mal was ihr mit <br>YOOtheme Pro gemacht habt!“
 					</blockquote>
 					<p>– Sascha Dube, YOOtheme</p>
 
@@ -97,8 +100,6 @@
 							<h2>2009–2018</h2>
 							<img data-src="dist/assets/nn-medienagentur.svg" style="max-height: 40vh; background: white; padding: 10px"/>
 							<p>Gründung der NN-Medienagentur</p>
-							<p>2009 erste Joomla-Website: Bäcker Weiss</p>
-							<img data-src="dist/assets/baeckerweiss.png" style="max-height: 30vh;"/>
 						</section>
 
 						<!-- Vertical Slide 4 -->
@@ -127,7 +128,6 @@
 						<section>
 							<h2>YOOmasterclass 2024</h2>
 							<p>Unsere Schulungsreihe für YOOtheme Pro</p>
-							<img data-src="dist/assets/yoomasterclass.jpg" style="max-height: 40vh;"/>
 							<p>→ Wissen teilen · Community stärken</p>
 						</section>
 
@@ -135,16 +135,15 @@
 						<section>
 							<h2>Kicktemp Shop</h2>
 							<p><a href="https://kicktemp.shop" target="_blank">kicktemp.shop</a></p>
-							<img data-src="dist/assets/kicktemp-shop.jpg" style="max-height: 40vh;"/>
 							<p>Kernprodukt: <strong>KickYooAddons</strong></p>
 						</section>
 
-						<!-- Vertical Slide 9 -->
+						<!-- Vertical Slide 9
 						<section>
 							<h2>Warum Kicktemp?</h2>
 							<p>Name kommt vom „Kicktemp“-Template: <br> Kick = schnell · temp = Template</p>
 							<img data-src="dist/assets/kicktemplate.jpg" style="max-height: 30vh;"/>
-						</section>
+						</section>-->
 
 						<!-- Vertical Slide 10 -->
 						<section>
@@ -166,7 +165,7 @@
 					</section>
 
 				<!-- Umfrage: Publikum -->
-				<section>
+				<section data-state="hidekick">
 					<h2>Bevor wir starten 👀</h2>
 					<ul>
 						<li>Anwender?</li>
@@ -181,7 +180,7 @@
 				</section>
 
 				<!-- Umfrage: Child Themes -->
-				<section>
+				<section data-state="hidekick">
 					<h2>Child Themes 🙋‍♂️🙋‍♀️</h2>
 					<ul>
 						<li>Schon mal gebaut?</li>
@@ -195,11 +194,14 @@
 					</aside>
 				</section>
 
+				<section data-state="hidekick" data-background="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3NrM2V3bjltdWJtM2J5dXBkbXRhY2dsN2ttcm5iMHN4bDl3eXUxdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PlnQNcQ4RYOhG/giphy.gif"></section>
+
 				<!-- Child Themes – Fluch & Segen -->
-				<section>
+				<section data-state="hidekick">
 					<h2>Child Themes – Fluch & Segen</h2>
 					<ul>
 						<li>✅ Update-sicher</li>
+						<li>✅ eigene Less Styles</li>
 						<li>✅ Schnell für Tweaks</li>
 						<li>❌ Projektgebunden</li>
 						<li>❌ Nicht wiederverwendbar</li>
@@ -214,11 +216,11 @@
 					</aside>
 				</section>
 
-				<section>
+				<section data-state="hidekick">
 					<h2>Die Alternative: Plugins</h2>
 					<ul>
 						<li>🔌 Modular & wiederverwendbar</li>
-						<li>⚡ Saubere Trennung von Code & Layout</li>
+						<li>⚡ Saubere Trennung von Code & Styles</li>
 						<li>📦 Zentral gepflegt, einfach zu updaten</li>
 						<li>🤝 Ideal für Teams & Agenturen</li>
 					</ul>
@@ -233,20 +235,23 @@
 					</aside>
 				</section>
 
+				<section data-state="hidekick bgtop" data-background="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGUzMjZ5bTV2a3hvcHYxcGVjZmM0aG95NnprbWJrZDVsMGQ0bTl1ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TCD3IQ7ZbYPSM/giphy.gif"></section>
+
 				<!-- Umfrage: Plugins -->
 				<section>
 					<h2>Plugins 🔌</h2>
 					<ul>
-						<li class="fragment">Joomla Plugin?</li>
-						<li class="fragment">YOOtheme Plugin?</li>
-						<li class="fragment">Regelmäßig?</li>
+						<li class="fragment">Joomla Plugin gebaut?</li>
+						<li class="fragment">YOOtheme Plugin gebaut?</li>
+						<li class="fragment">Third-Party Plugin gekauft?</li>
 					</ul>
 
 					<aside class="notes">
-						- Erst allgemein: Joomla Plugin gebaut?
-						- Dann spezieller: YOOtheme Plugin?
-						- Zum Schluss: Wer macht das regelmäßig?
-						- Überleitung: Genau da setzen wir heute an.
+						- Erst allgemein: Wer hat schon mal ein Joomla Plugin gebaut?
+						- Dann spezieller: Wer hat ein YOOtheme Plugin gebaut?
+						- Und ganz wichtig: Wer hat schon mal ein Third-Party Plugin gekauft?
+						- Damit sehe ich: Viele setzen lieber auf fertige Lösungen statt selbst zu entwickeln.
+						- Übergang: Genau da setzen wir heute an → eigene Lösungen entwickeln, aber auch professionell anbieten.
 					</aside>
 				</section>
 
@@ -281,6 +286,12 @@
 				</section>
 
 				<section>
+					<h2>YTCD2025 Demo Plugin</h2>
+					<p><a href="https://github.com/Kicktemp/plg_system_kickytcd" target="_blank">GitHub Repo</a></p>
+				</section>
+
+				<section data-state="hidekick bgtop" data-background="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmtvZ3AzM2N5MTRiZm16ajgycmljeDNmYjQ5dnZqdmhtMzhjamo5dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oYtVHSxngR3lC/giphy.gif"><h2>DEMO</h2></section>
+				<section>
 					<h2>Webseiten</h2>
 					<ul>
 						<li><a href="https://kicktemp.com" target="_blank">kicktemp.com</a></li>
@@ -289,6 +300,14 @@
 						<li><a href="https://kickyoocasts.com" target="_blank">kickyoocasts.com</a></li>
 					</ul>
 				</section>
+
+				<section>
+					<h2>Präsentation</h2>
+					<p><a href="https://ytc25.kicktemp.com" target="_blank">ytc25.kicktemp.com</a></p>
+				</section>
+
+				<section data-state="hidekick bgtop" data-background="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Jtb3Ryczk4bWM1OXExNm50MWpibjQ0aTE5NnE4N3A5MGxsMjRpNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/JzOyy8vKMCwvK/giphy.gif"></section>
+				<section data-state="hidekick bgtop" data-background="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzVnZm12aWFjZmJmYWh2enhkdmZiNDF3OTl1ZGV5Zmt2a2dsZ3RscyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/T8ZVPm0rhBJ5je8bKR/giphy.gif"></section>
 
 				<section>
 					<h2>Vielen Dank!</h2>

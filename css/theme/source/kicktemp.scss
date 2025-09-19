@@ -149,6 +149,10 @@ body.hidekick svg.kicktemp {
   display:none;
 }
 
+body.bgtop .reveal .slide-background-content {
+  background-position: 50% 0%;
+}
+
 
 // Theme template ------------------------------
 @import "../template/theme";

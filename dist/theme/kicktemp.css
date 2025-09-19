@@ -151,6 +151,10 @@ body.hidekick svg.kicktemp {
   display: none;
 }
 
+body.bgtop .reveal .slide-background-content {
+  background-position: 50% 0%;
+}
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -500,19 +504,3 @@ body.hidekick svg.kicktemp {
     background-color: var(--r-background-color);
   }
 }
-
-
-/* Click-to-Play video overlay styles */
-.reveal video[data-clickplay],
-.reveal video[data-autoplay]{max-width:100%;height:auto;display:block;margin:0 auto;}
-.reveal .kt-video-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:auto;transition:opacity .2s ease;}
-.reveal .kt-video-overlay svg{width:20%;max-width:160px;min-width:64px;}
-
-/* Fullscreen video slide helper */
-.reveal section[data-video-fullscreen] {padding:0 !important;}
-.reveal section[data-video-fullscreen] .stretch,
-.reveal section[data-video-fullscreen] video {width:100vw;height:100vh;object-fit:cover;margin:0;}
-.reveal section[data-video-fullscreen] .kt-video-overlay svg{width:12%;}
-/* Hide UI when in fullscreen video state */
-.state-video-fullscreen .reveal .controls,
-.state-video-fullscreen .reveal .progress {opacity:0; pointer-events:none;}
